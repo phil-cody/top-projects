@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Etch-a-Sketch</h1>
+      <div class="content">
+        <div class="canvas" id="canvas"></div>
+        <div class="manipulate">
+          <div class="dimensions"><p>"Dimensions"</p></div>
+          <button id="edit-dimensions">Edit Dimensions</button>
+          <button id="reset">Reset</button>
+          <button id="eraser">Eraser</button>
+          <div class="choose-block">
+            <label for="choose">Choose Color:</label>
+            <input type="color" name="choose" id="choose" value="#abcdef" />
+          </div>
+          <button id="random-color">Random Color</button>
+          <div class="darkening-effect">
+            <p>Progressive darkening effect</p>
+            <label for="darkening" class="darkening-switch">
+              <input type="checkbox" name="darkening" id="darkening" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <p id="note">Click on the canvas to activate the brush.</p>
+    </main>
+  </body>
+</html>

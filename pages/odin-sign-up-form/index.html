@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <div class="title">
+          <img src="../../assets/icons/odin-icon.svg" alt="">
+          <h1>THOR</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="text">
+          <h2>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. <br />Sign
+            up <span class="italic">now</span> to get started.
+          </h2>
+          <h3>You <span class="italic">know</span> you want to.</h3>
+        </div>
+        <form action="">
+          <div class="fields">
+            <h4>Let's do this!</h4>
+            <div class="field">
+              <label for="first-name">first name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                placeholder="Loki"
+              />
+            </div>
+            <div class="field">
+              <label for="last-name">last name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Laufeyson"
+              />
+            </div>
+            <div class="field">
+              <label for="email">email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="god@post.sc"
+              />
+            </div>
+            <div class="field">
+              <label for="phone-number">phone number</label>
+              <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                placeholder="+46311234567"
+              />
+            </div>
+            <div class="field">
+              <label for="password">password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="field">
+              <label for="confirm-password">confirm password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+              />
+            </div>
+          </div>
+        </form>
+        <button type="submit">Create Account</button>
+        <div class="text">
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
