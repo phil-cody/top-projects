@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Rubik Glitch';
+  src: url('../../assets/fonts/RubikGlitch-Regular.ttf')
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -408,4 +413,52 @@ svg {
 .dashboard .trending__item .item__text p {
   font-size: 0.9rem;
   color: #6f6f6f;
+}
+
+.home-btn {
+  position: fixed;
+  top: 80%;
+  transform: translateY(-80%);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.home-btn button {
+  border: none;
+  padding-left: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.home-btn button p {
+  font-family: 'Rubik Glitch', sans-serif;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+}
+
+.home-btn button p span {
+  position: relative;
+  top: 0;
+  left: -3px;
+}
+
+.home-btn:hover {
+  transform: scale(1.05) translateY(-50%);
+}
+
+.home-btn:hover button p span:first-child {
+  top: 0;
+  left: -8px;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover button p span:last-child {
+  top: 0;
+  left: -8px;
+  transition: all 0.8s ease;
 }

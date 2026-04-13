@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Audiowide';
+  src: url('../../assets/fonts/Audiowide-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Rubik Glitch';
+  src: url('../../assets/fonts/RubikGlitch-Regular.ttf')
+}
+
 /* styles for calculator */
 
 * {
@@ -137,6 +147,52 @@ main {
   flex-direction: column;
   gap: 10px;
   font-size: 12px;
+}
+
+.home-btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.home-btn button {
+  border: none;
+  padding-left: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.home-btn button p {
+  font-family: 'Rubik Glitch', sans-serif;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-btn button p span {
+  position: relative;
+  top: 0;
+  left: -3px;
+}
+
+.home-btn:hover {
+  transform: scale(1.05) translateY(-50%);
+}
+
+.home-btn:hover button p span:first-child {
+  top: 0;
+  left: -8px;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover button p span:last-child {
+  top: 0;
+  left: -8px;
+  transition: all 0.8s ease;
 }
 
 @media (max-width: 550px) {
