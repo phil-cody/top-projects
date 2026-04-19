@@ -154,6 +154,8 @@ main {
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .home-btn button {
@@ -181,6 +183,7 @@ main {
 
 .home-btn:hover {
   transform: scale(1.05) translateY(-50%);
+  box-shadow: 0px 0px 15px 13px rgba(0,0,0,0.3);
 }
 
 .home-btn:hover button p span:first-child {

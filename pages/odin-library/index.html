@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <a href="../../index.html" class="home-btn">
+      <button>
+        <p>
+          <span><</span>
+          <span><</span>
+          home
+        </p>
+      </button>
+    </a>
+    <header>
+      <div class="container">
+        <h1>Library</h1>
+        <button class="btn" id="new-board-btn">Add new board</button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="boards">
+        </section>
+      </div>
+    </main>
+    <dialog class="dialog" id="new-board">
+      <div class="dialog-container">
+        <h3>Enter board details</h3>
+        <button class="close-dialog">
+          <span></span>
+          <span></span>
+        </button>
+        <form class="dialog-form" method="dialog">
+          <div class="dialog-field">
+            <label for="board-title">Title (Unique):</label>
+            <input type="text" id="board-title" name="board-title" required/>
+          </div>
+          <button class="dialog-btn btn" type="submit">Add board</button>
+        </form>
+      </div>
+    </dialog>
+    <dialog class="dialog" id="new-book">
+      <div class="dialog-container">
+        <h3>Enter book details</h3>
+        <button class="close-dialog">
+          <span></span>
+          <span></span>
+        </button>
+        <form class="dialog-form" method="dialog">
+          <div class="dialog-field">
+            <label for="book-title">Title:</label>
+            <input type="text" id="book-title" name="book-title" required/>
+          </div>
+          <div class="dialog-field">
+            <label for="book-author">Author:</label>
+            <input type="text" id="book-author" name="book-author" required/>
+          </div>
+          <div class="dialog-field">
+            <label for="book-number-of-pages">Number of pages:</label>
+            <input
+              type="text"
+              id="book-number-of-pages"
+              name="book-number-of-pages"
+              required
+            />
+          </div>
+          <div class="dialog-field">
+            <label for="book-status">Read status:</label>
+            <select name="book-status" id="book-status">
+              <option value="Not read">Not read</option>
+              <option value="Read">Read</option>
+            </select>
+          </div>
+          <button class="dialog-btn btn" type="submit">Add book</button>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -104,6 +104,8 @@ h1 {
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  height: 100%;
+  background-color: #fff;
 }
 
 .card-image img {
