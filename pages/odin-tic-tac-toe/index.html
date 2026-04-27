@@ -1,13 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
-  <title>Tic-Tac-Toe</title> 
-</head>
-<body>
-  <main></main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Tic-Tac-Toe Game</h1>
+        <div class="board">
+        </div>
+        <div class="action">
+          <button class="next-round action-btn">Next round</button>
+          <button class="edit-players action-btn">Edit players</button>
+          <button class="reset action-btn">Reset</button>
+        </div>
+        <div class="game-info">
+          <p id="score"></p>
+          <p id="turn-info"></p>
+          <p id="result"></p>
+        </div>
+      </div>
+    </main>
+    <dialog class="dialog">
+      <h3>Who will play?</h3>
+      <form method="dialog" class="dialog__form">
+        <div class="field">
+          <label for="player-one-name">First player's name: </label>
+          <input type="text" id="player-one-name" name="player-one-name" required>
+        </div>
+        <div class="field">
+          <label for="player-two-name">Second player's name: </label>
+          <input type="text" id="player-two-name" name="player-two-name" required>
+        </div>
+        <button class="dialog__btn" type="submit">Start game</button>
+      </form>
+    </dialog>
+  </body>
 </html>
