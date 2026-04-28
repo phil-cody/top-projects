@@ -8,20 +8,24 @@ let currentParent = null;
 let currentOpen = null;
 let currentForm = null;
 
-function Book(form) {
-  this.title = form.get("book-title");
-  this.author = form.get("book-author");
-  this.numberOfPages = form.get("book-number-of-pages");
-  this.status = form.get("book-status");
-  this.id = crypto.randomUUID();
+class Book {
+  constructor(form) {
+    this.title = form.get("book-title");
+    this.author = form.get("book-author");
+    this.numberOfPages = form.get("book-number-of-pages");
+    this.status = form.get("book-status");
+    this.id = crypto.randomUUID();
+  }
+
+  toggleStatus() {
+    this.status = this.status === 'Read' ? 'Not read' : 'Read';
+  }
 }
 
-Book.prototype.toggleStatus = function () {
-  this.status = this.status === 'Read' ? 'Not read' : 'Read';
-}
-
-function Board(form) {
-  this.title = form.get("board-title");
+class Board {
+  constructor(form) {
+    this.title = form.get("board-title");
+  }
 }
 
 function addBookToBoard(book, board) {
@@ -48,7 +52,6 @@ function closeDialog() {
 }
 
 function openBoard(target) {
-
   if (!target.classList.contains("open")) {
     closeAllBoards();
     target.classList.add("open");
@@ -240,7 +243,9 @@ document.addEventListener("click", (event) => {
       return;
     }
 
-    myLibrary[`${target.closest('.board').dataset.board}`][index].toggleStatus();
+    myLibrary[`${target.closest(".board").dataset.board}`][
+      index
+    ].toggleStatus();
 
     renderBoard(myLibrary);
   }
