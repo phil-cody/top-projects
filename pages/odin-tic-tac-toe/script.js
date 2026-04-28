@@ -261,7 +261,6 @@ function ScreenController() {
     ) {
       turnInfo.textContent = "";
       resultMessage.textContent = `You have a draw! Will you play again?`;
-      boardDiv.removeEventListener("click", clickHandlerBoard);
     }
   };
 
