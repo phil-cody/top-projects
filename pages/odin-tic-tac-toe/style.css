@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Rubik Glitch';
+  src: url('../../assets/fonts/RubikGlitch-Regular.ttf')
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
